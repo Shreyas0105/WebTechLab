@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multi-Style Page</title>
+    <link id="pagestyle" rel="stylesheet" href="style.css">
+</head>
+<body class="style1">
+
+    <header>
+        <h1>Welcome to the Home Page</h1>
+    </header>
+
+    <nav>
+      <button onclick="switchStyle('style1')">Home</button>
+      <button onclick="switchStyle('style2')">StyleSheet2</button>
+      <button onclick="switchStyle('style3')">StyleSheet3</button>
+	<button onclick="switchStyle('style4')">StyleSheet4</button>
+	<button onclick="switchStyle('style5')">StyleSheet5</button>
+    </nav>
+
+    <main id="content">
+        <h2>Welcome! Shreyas Shetty usn:4MW23CS155</h2>
+	<img src="C:\Users\Acer\Pictures\Saved Pictures\,kjhkj.png"alt="sample image"width="200">		
+        <p>This is the homepage. Click the buttons above to change the page style and view different content.</p>
+    </main>
+
+    <script>
+        function switchStyle(style) {
+            document.body.className = style;
+
+            const content = document.getElementById('content');
+            if (style === 'style1') {
+                content.innerHTML = `
+                    <h2>Welcome!</h2>
+                    <p>This is the homepage. Click the buttons above to change the page style and view different content.</p>
+                `;
+            } else if (style === 'style2') {
+                content.innerHTML = `
+                    <h2>Page2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula semper risus.</p>
+                `;
+            } else if (style === 'style3') {
+                content.innerHTML = `
+                    <h2>Page3</h2>
+                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                `;
+            } else if (style === 'style4') {
+                content.innerHTML = `
+                    <h2>Page4</h2>
+                    <p>Phasellus facilisis, sapien in finibus luctus, justo est sodales ipsum, in commodo nunc metus nec enim.</p>
+                `;
+            }else if (style === 'style5') {
+                content.innerHTML = `
+                    <h2>Page5</h2>
+                    <p>Phasellus facilisis, sapien in finibus luctus, justo est sodales ipsum, in commodo nunc metus nec enim.</p>
+                `;
+		}
+
+        }
+    </script>
+
+</body>
+</html>

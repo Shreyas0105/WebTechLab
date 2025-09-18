@@ -1,0 +1,109 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: all 0.5s ease;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+    padding: 10px;
+}
+
+nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+
+body.style1 {
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+body.style1 header {
+    background-color: #4682b4;
+    color: white;
+}
+
+body.style1 nav {
+    background-color: #87cefa;
+}
+
+body.style1 nav button:hover {
+    background-color: #00bfff;
+    color: white;
+}
+
+body.style2 {
+    background-color: #fff0f5;
+    color: #4b0082;
+}
+
+body.style2 header {
+    background-color: #db7093;
+    color: white;
+}
+
+body.style2 nav {
+    background-color: #ffc0cb;
+}
+
+body.style2 nav button:hover {
+    background-color: #ff69b4;
+    color: white;
+}
+
+body.style3 {
+    background-color: #f5fffa;
+    color: #006400;
+}
+
+body.style3 header {
+    background-color: #228b22;
+    color: white;
+}
+
+body.style3 nav {
+    background-color: #90ee90;
+}
+
+body.style3 nav button:hover {
+    background-color: #32cd32;
+    color: white;
+}
+body.style4 {
+    background-color: #fffaf0;
+    color: #8b4513;
+}
+
+body.style4 header {
+    background-color: #d2691e;
+    color: white;
+}
+
+body.style4 nav {
+    background-color: #f4a460;
+}
+
+body.style4 nav button:hover {
+    background-color: #cd853f;
+    color: white;
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Student Registration Form</title>
+<style>
+body {
+  font-family: Verdana, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd, #f1f8ff);
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #1565c0;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 65%;
+  margin: 0 auto;
+  background-color: #fff;
+  border-collapse: collapse;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+th {
+  text-align: left;
+  padding: 15px;
+  background-color: #1565c0;
+  color: white;
+  font-size: 19px;
+}
+
+td {
+  padding: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+  width: 95%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+input[type="submit"], input[type="reset"] {
+  background-color: #1565c0;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #0d47a1;
+}
+
+textarea {
+  resize: vertical;
+  height: 90px;
+}
+
+.radio, .checkbox {
+  width: auto;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align:center;">Student Registration Portal</h2>
+<h1>Registration Form</h1>
+
+<form action="#" method="post">
+<table>
+  <tr>
+    <th colspan="2">Personal Information</th>
+  </tr>
+  <tr>
+    <td>First Name:</td>
+    <td><input type="text" name="firstname" placeholder="Enter your first name"></td>
+  </tr>
+  <tr>
+    <td>Last Name:</td>
+    <td><input type="text" name="lastname" placeholder="Enter your last name"></td>
+  </tr>
+  <tr>
+    <td>USN:</td>
+    <td><input type="text" name="usn" placeholder="Enter your USN"></td>
+  </tr>
+  <tr>
+    <td>Department:</td>
+    <td>
+      <select name="department">
+        <option value="">--Select Department--</option>
+        <option value="cse">Computer Science</option>
+        <option value="ise">Information Science</option>
+        <option value="ece">Electronics & Communication</option>
+        <option value="me">Mechanical Engineering</option>
+        <option value="ce">Civil Engineering</option>
+        <option value="eee">Electrical & Electronics</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Email:</td>
+    <td><input type="email" name="email" placeholder="Enter your email"></td>
+  </tr>
+  <tr>
+    <td>Password:</td>
+    <td><input type="password" name="password" placeholder="Enter your password"></td>
+  </tr>
+  <tr>
+    <td>Gender:</td>
+    <td>
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="other"> Other
+    </td>
+  </tr>
+  <tr>
+    <td>Country:</td>
+    <td>
+      <select name="country">
+        <option value="in">India</option>
+        <option value="uk">United Kingdom</option>
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="au">Australia</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Skills:</td>
+    <td>
+      <input type="checkbox" name="skills" value="tech" class="checkbox"> Tech  
+      <input type="checkbox" name="skills" value="communication" class="checkbox"> Communication  
+      <input type="checkbox" name="skills" value="others" class="checkbox"> Others  
+    </td>
+  </tr>
+  <tr>
+    <td>Address:</td>
+    <td><textarea name="address" placeholder="Enter your address"></textarea></td>
+  </tr>
+  <tr>
+    <td colspan="2" style="text-align:center;">
+      <input type="submit" value="Register">
+      <input type="reset" value="Reset">
+    </td>
+  </tr>
+</table>
+</form>
+
+</body>
+</html>
